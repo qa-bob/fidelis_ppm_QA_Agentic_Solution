@@ -149,3 +149,11 @@ tests/
 - Put assertions inside page object methods
 - Use `page.waitForTimeout()` — use `waitForSelector` or Playwright auto-waiting instead
 - Use `any` type without explicit justification
+
+---
+
+## Reference Docs
+
+- Agent definitions: @Agent.md
+- Slash command reference: @Skills.md
+- Cross-tool AI agent instructions: @AGENTS.md
