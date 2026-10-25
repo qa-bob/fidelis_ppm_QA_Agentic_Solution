@@ -21,7 +21,7 @@ async function globalSetup(): Promise<void> {
 
   let config: SiteConfig = {};
   try {
-    const raw = fs.readFileSync(configPath, 'utf-8').replace(/^﻿/, '');
+    const raw = fs.readFileSync(configPath, 'utf-8').replace(/^\uFEFF/, '');
     config = JSON.parse(raw) as SiteConfig;
   } catch {
     console.warn('[global-setup] Warning: Could not read site.config.json.');
